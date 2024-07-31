@@ -1,0 +1,32 @@
+Locally, this directory contains the latest Google Ngrams downloadable files. However, that's more than I can store on Github for free.
+
+Google Ngrams data is available here: https://storage.googleapis.com/books/ngrams/books/datasetsv3.html
+
+The specific data I'm using is available here: http://storage.googleapis.com/books/ngrams/books/20200217/eng/eng-1-ngrams_exports.html
+
+> ls
+1-00000-of-00024
+1-00001-of-00024
+1-00002-of-00024
+1-00003-of-00024
+1-00004-of-00024
+1-00005-of-00024
+1-00006-of-00024
+1-00007-of-00024
+1-00008-of-00024
+1-00009-of-00024
+1-00010-of-00024
+1-00011-of-00024
+1-00012-of-00024
+1-00013-of-00024
+1-00014-of-00024
+1-00015-of-00024
+1-00016-of-00024
+1-00017-of-00024
+1-00018-of-00024
+1-00019-of-00024
+1-00020-of-00024
+1-00021-of-00024
+1-00022-of-00024
+1-00023-of-00024
+NOTE.txt
