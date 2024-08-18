@@ -1,0 +1,177 @@
+# I want a list of only the words that
+# show the usual relationship between English spelling and pronunciation.
+# So I'm excluding words not pronounced how they are spelled,
+# and "words" that shouldn't be in Google Ngrams to begin with.
+
+# Roman numerals: "viii" is pronounced "eight".
+# Abbreviations:  "lbs" is pronounced "pounds".
+# Initialisms:    "dna" is pronounced "dee en ay".
+# Morphemes:      "tion" is never pronounced alone like that.
+# Typos/mistakes: "ofthe" is an OCR artifact, not a real word of English.
+# Unknown:        I don't know what "alr" is, but it can't be pronounced "alr".
+
+# Merely unusual spelling or pronunciation doesn't condemn a word.
+# "people" is pronounced "pee-pl" and not "pee-oh-pl",
+# but nevertheless, that quirk is part of English's spelling system,
+# while the words above are not.
+
+# Just one reasonably common interpretation of a word is enough to save it.
+# "Feb" is pronounced "February", and "Jan" is pronounced "January",
+# but "Jan" is also pronounced "Jan" when it's the name "Jan", so "jan" stays.
+
+# This gets subjective.
+# Possibly somewhere, "biol" is commonly pronounced aloud as "by-ole",
+# but in my English, "biol" is pronounced "biology".
+
+# And actually, there are too many words like this to get them all.
+# I only strictly checked the top 1296 3-letter prefixes and suffixes,
+# and then only the first and second most common words that matched those.
+# I think if a prefix/suffix has legitimate source words first and second,
+# any subsequent illigitimate words probably don't make a difference anyway.
+
+
+##### ROMAN NUMERALS #####
+iii vii viii xii xiii xiv xviii xxiii
+
+
+##### ABBREVIATIONS PRONOUNCED AS WHOLE WORDS #####
+# months
+feb apr jun jul aug sep oct nov dec
+# Jan is a name, mar is a word, may is a word
+# sep maybe for seperator
+# oct maybe for octal
+# dec maybe for decimal, decrement
+
+# days of the week
+tue thu fri
+# wed, sat, sun are words
+# mon is a dialectal variant of man
+
+# used in writing
+etc inst misc div subdiv subsec ibid cir vol univ thos tel
+
+# units
+lbs msec nsec arcsec
+
+# titles
+mrs esq
+
+# corporate
+inc ltd assoc assn
+
+# technical
+proc defun soln ipsec
+# questionable: epub
+
+# books of the Bible
+eph
+
+# states
+wisc
+
+# fields of study
+biol microbiol
+phys biophys geophys physiol
+psychol pathol socio
+sci
+neurosci
+ophth
+# questionable: ortho
+
+# other abbreviations
+abbrev
+seq
+occup
+indiv
+prev
+psec
+# questionable: rom, config
+
+
+##### INITIALISMS #####
+# places
+usa ussr sssr iow
+
+# official
+cia nga iso epa cfr eac usia
+# Ngo is a surname, Ngos is its plural
+
+# institutional
+mit ceo cio isbn doi eit eitc eitf gst upou oet ebt
+# Dea, Dae, Ira, Uri are names
+
+# medical
+dna rna mrna trna pth mme hiv aud rebt
+# questionable: Als is the plural of Al
+
+# miscellaneous
+pov kwhy
+
+# multiple meanings
+pha lhi asi soc cit ohi
+
+
+##### MORPHEMES #####
+pre peri quasi multi mis non
+ing ness tion tions tional
+esk
+# esk is a variant spelling of -esque
+
+xth
+# not a morpheme, but doesn't quite fit a category here
+
+# questionable: neo (also a name), anti (often an adjective)
+
+
+##### TYPOS / MISTAKEES #####
+ofthe
+ofwho
+ofwhy
+ofjob
+thejob
+ajob
+myjob
+yourjob
+newjob
+hisjob
+theirjob
+knowwhy
+forwhy
+reasonwhy
+andwhy
+ifyou
+thosewho
+oneeighth
+lst
+lowa
+
+# x --> ac
+eaccept
+eace
+eacample
+eacecutive
+eacamination
+eaccess
+
+
+##### UNKNOWN, BUT DEFINITE ANOMALIES #####
+alr
+sch
+sta
+pty
+sfy
+lti
+aii
+hwhy
+hth
+
+
+##### QUESTIONABLE BUT ALLOWED #####
+
+# Old timey: thee, thy, thou, hath, doth, hast, tis, twas, didst
+# Many or all of these survive in certain expressions or genres/parodies.
+# Native English speakers don't struggle to spell or pronounce them,
+# and to me they seem to follow English's normal spelling system.
+
+# Nonstandard dialect/spelling: wif, dem, lyin, goin, tha, mon, aff
+# They are nonstandard, but they don't defy English spelling.

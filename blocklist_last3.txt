@@ -1,0 +1,22 @@
+# Blocklist for last-3-letter groups.
+# I'm only removing the ones that will never or almost never
+# result in a word/name I could comfortably use.
+
+
+##### OFFENSIVE OR DISTRACTING #####
+
+sex
+# Resulting word always ends with "sex", which is distracting.
+# (stasex, latsex)
+
+# gay, cox, dix
+# All seem like they would be distracting, but often don't turn out that way.
+# stigay, lancox, mondix
+
+
+##### SPECIFIC TO ONE TYPE OF WORD #####
+
+# Specific to numbers
+# fth xty xth
+# These only appear in numbers in English, but words with them can be fine.
+# stefth, prixty, troxth
