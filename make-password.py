@@ -88,7 +88,7 @@ def generate_password(pattern:str) -> str:
     return password
 
 def calculate_entropy(pattern:str) -> float:
-    """Calculate the entropy of a pattern."""
+    """Calculate the entropy of a pattern, rounded down to an int."""
     entropy = 0
     for c in pattern:
         for cast in casts:
@@ -97,7 +97,7 @@ def calculate_entropy(pattern:str) -> float:
                 break
         else:
             entropy += 0
-    return entropy
+    return int(entropy)
 
 
 # For each pattern,
@@ -110,4 +110,4 @@ for pattern in patterns:
     generic = generic_password(pattern)
     password = generate_password(pattern)
     entropy = calculate_entropy(pattern)
-    print(f'{generic:35} [{entropy:3.0f} bits]: {password}')
+    print(f'{generic:35} [{entropy:3d} bits]: {password}')
