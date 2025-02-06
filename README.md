@@ -40,9 +40,9 @@ Random character generators make passwords that look like this:
 - `+ULu#nG*NQtTx` (80 bits)
 - `8gcfLh!5AKx+a71Xd` (104 bits)
 
-These are nice and short. But they're hard to memorize, and even if you use a password manager, they're hard to hold in short-term memory (eg, when copying them from your phone's password manager to a friend's computer).
+These are very short. But they're hard to memorize, and even if you use a password manager, they're hard to hold in short-term memory (eg, when copying them from your phone's password manager to a friend's computer).
 
-Using only a limited set of characters makes things a little easier:
+Using only a limited set of characters (such as lowercase letters) makes things a little easier:
 
 - `bfvxnolhhewre` (61 bits)
 - `loebxmvpseculilmaa` (85 bits)
@@ -81,11 +81,11 @@ Quence passwords are about 40% shorter than random-word passwords on average. (A
 
 ### High-entropy
 
-Quence, like all these schemes, is scalable to any given entropy. Each three letters of a Quence password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any rough size. For example, you can use a 100-bit version for a master password on a password manager, and 60-bit passwords for less crucial accounts.
+Quence, like all these schemes, is scalable to any given entropy. Each three letters of a Quence password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any desired entropy. For example, you can use a 100-bit version for a master password on a password manager, and 60-bit passwords for less sensitive accounts.
 
 # How it works
 
-Quence generates fake 6-letter words (eg: "reshan", "ratmer", etc). The first 3 letters of a word are drawn from a list of 1,296 3-letter sequences (found in `first3.txt`). This list is a compilation of the sequences of 3 letters that occur most frequently at the beginning of English words, as found in Google Ngrams. Therefore "res" is in the list (from "research", "results", "respect", "resources", etc), but "aar" doesn't make the cut (only in comparatively rare words: "aardvark", "Aaron", and a few others).
+Quence generates fake 6-letter words (eg: "reshan", "ratmer", etc). The first 3 letters of a word are drawn from a list of 1,296 3-letter sequences (found in `first3.txt`). This list is a compilation of the sequences of 3 letters that occur most frequently at the beginning of English words, as found in Google Ngrams. Therefore "res" is in the list (from "research", "results", "respect", "resources", etc), but "aar" doesn't make the cut (only in a few words: "aardvark", "Aaron").
 
 The last 3 letters are drawn from a similar list of the 1,296 most common 3-letter sequences at the ends of English words. For example, "han" (from "than", "Jonathan", "Khan", "Nathan", etc).
 
