@@ -1,6 +1,6 @@
-# Thethe
+# Quence
 
-Thethe is a password generator that makes short, memorable, high-entropy passwords.
+Quence is a password generator that makes short, memorable, high-entropy passwords.
 
 It generates passwords that look like this (entropy shown in parentheses):
 
@@ -58,34 +58,34 @@ On the other hand, random word generators make passwords that look like this (us
 
 These are much easier to memorize and to manually copy. But they're much longer, so they take longer to type, and there are more places to make a mistake or misremember (ample/amble, creme/cream, etc.).
 
-In contrast, Thethe passwords are memorable and short, without sacrificing entropy.
+In contrast, Quence passwords are memorable and short, without sacrificing entropy.
 
 ### Memorable
 
-Thethe passwords are memorable. Here's a demonstration.
+Quence passwords are memorable. Here's a demonstration.
 
-Choose one of the Thethe passwords above. Try to memorize it, then open another window and type it in. Repeat until you get it exactly correct. Then try the same thing with the traditional random passwords above. 
+Choose one of the Quence passwords above. Try to memorize it, then open another window and type it in. Repeat until you get it exactly correct. Then try the same thing with the traditional random passwords above. 
 
-If you're like me, it takes you half as much time and effort to memorize Thethe passwords compared to traditional random-generated passwords. And if I step away for a few minutes and come back, I can recall the Thethe password better than the others.
+If you're like me, it takes you half as much time and effort to memorize Quence passwords compared to traditional random-generated passwords. And if I step away for a few minutes and come back, I can recall the Quence password better than the others.
 
 ### Short
 
-Thethe passwords are short. Looking at only the 100-bit variants of each of the above password generation methods:
+Quence passwords are short. Looking at only the 100-bit variants of each of the above password generation methods:
 
 - `8gcfLh!5AKx+a71Xd` (Random characters = 17 characters)
 - `atvybxwoypgviwzccfyyac` (Random letters = 22 characters)
-- `alefig.anachs.druboy.oremad.gerero` (Thethe = 34 characters)
+- `alefig.anachs.druboy.oremad.gerero` (Quence = 34 characters)
 - `slurp.lasso.hub.fetch.sect.elope.stony.grope.tug.drove` (Random words = 54 characters)
 
-Thethe passwords are about 40% shorter than random-word passwords on average. (Admittedly, they are also about twice the length of random-character passwords. However, I have not found Thethe passwords to be unwieldy, even when they reach to 100 bits, that is, 34 characters).
+Quence passwords are about 40% shorter than random-word passwords on average. (Admittedly, they are also about twice the length of random-character passwords. However, I have not found Quence passwords to be unwieldy, even when they reach to 100 bits, that is, 34 characters).
 
 ### High-entropy
 
-Thethe, like all these schemes, is scalable to any given entropy. Each three letters of a Thethe password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any rough size. For example, you can use a 100-bit version for a master password on a password manager, and 60-bit passwords for less crucial accounts.
+Quence, like all these schemes, is scalable to any given entropy. Each three letters of a Quence password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any rough size. For example, you can use a 100-bit version for a master password on a password manager, and 60-bit passwords for less crucial accounts.
 
 # How it works
 
-Thethe generates fake 6-letter words (eg: "reshan", "ratmer", etc). The first 3 letters of a word are drawn from a list of 1,296 3-letter sequences (found in `first3.txt`). This list is a compilation of the sequences of 3 letters that occur most frequently at the beginning of English words, as found in Google Ngrams. Therefore "res" is in the list (from "research", "results", "respect", "resources", etc), but "aar" doesn't make the cut (only in comparatively rare words: "aardvark", "Aaron", and a few others).
+Quence generates fake 6-letter words (eg: "reshan", "ratmer", etc). The first 3 letters of a word are drawn from a list of 1,296 3-letter sequences (found in `first3.txt`). This list is a compilation of the sequences of 3 letters that occur most frequently at the beginning of English words, as found in Google Ngrams. Therefore "res" is in the list (from "research", "results", "respect", "resources", etc), but "aar" doesn't make the cut (only in comparatively rare words: "aardvark", "Aaron", and a few others).
 
 The last 3 letters are drawn from a similar list of the 1,296 most common 3-letter sequences at the ends of English words. For example, "han" (from "than", "Jonathan", "Khan", "Nathan", etc).
 
