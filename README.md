@@ -10,6 +10,10 @@ It generates passwords that look like this (entropy shown in parentheses):
 
 # How to use
 
+Quence has two versions: an automatic digital version, and a non-digital version that uses printed paper and dice. The digital version is fast and convenient and has more features, but the paper and dice version doesn't use computer-generated numbers and is therefore easier to confirm as secure.
+
+## Digital version
+
 Run `python3 make-password.py`. The output will look like this:
 
 ```
@@ -29,6 +33,10 @@ aaaaaa!aaaaaa1aaaaaa                [ 91 bits]: hvteqb&rwokjy8yywycu
 The rightmost column is the randomly generated passwords, the middle column shows their entropy, and the left column shows their template, where `a` is a lowercase letter, `1` is a digit, `!` is a symbol, and `firlas` is a six-letter fake word (See [How it works](#How it works).)
 
 Copy a password to where you want it, then close the terminal. You can also combine different passwords. For example, if you want the format `firlas.firlas.111!!!`, you can combine the `firlas.firlas` password with the `111!!!` password to make `nobbuy.ablaft.599^#*`.
+
+## Paper version
+
+Print `paper.pdf`. Follow the instructions there. You will need that printed document and a six-sided die (having two or four six-sided dice might make it easier.)
 
 # Benefits over traditional password generators
 
