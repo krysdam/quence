@@ -78,18 +78,20 @@ If you're like me, it takes you half as much time and effort to memorize Quence 
 
 ### Short
 
-Quence passwords are short. Looking at only the 100-bit variants of each of the above password generation methods:
+Quence passwords are short. Looking at only the 100-bit variants of each of these password types:
 
 - `8gcfLh!5AKx+a71Xd` (Random characters = 17 characters)
 - `atvybxwoypgviwzccfyyac` (Random letters = 22 characters)
 - `alefig.anachs.druboy.oremad.gerero` (Quence = 34 characters)
 - `slurp.lasso.hub.fetch.sect.elope.stony.grope.tug.drove` (Random words = 54 characters)
 
-Quence passwords are about 40% shorter than random-word passwords on average. (Admittedly, they are also about twice the length of random-character passwords. However, I have not found Quence passwords to be unwieldy, even when they reach to 100 bits, that is, 34 characters).
+Quence passwords are about 40% shorter than random-word passwords on average.
+
+Admittedly, they are also about twice the length of random-character passwords. However, I have not found Quence passwords to be unwieldy, even when they reach to 100 bits, that is, 34 characters.
 
 ### High-entropy
 
-Quence, like all these schemes, is scalable to any given entropy. Each three letters of a Quence password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any desired entropy. For example, you can use a 100-bit version for a master password on a password manager, and 60-bit passwords for less sensitive accounts.
+Quence, like all these schemes, is scalable to any given entropy. Each three letters of a Quence password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any desired entropy. For example, you can mak a 100 bit password for a master password on a password manager, and 60 bit passwords for less sensitive accounts.
 
 # How it works
 
@@ -103,4 +105,4 @@ Gluing a 3-letter sequence from the "firsts" list to a 3-letter sequence from th
 
 Because each list contains 1,296 elements which are drawn uniformly at random, each drawing of a 3-letter word-half contributes $log_2(1296) \approx 10.3$ bits of entropy, and each 6-letter word contributes twice that, or about 20.6 bits.
 
-However, this entropy analysis assumes the attacker knows the generation scheme. If the attacker only knows a password's pattern is, for example, `aaaaaa.aaaaaa.aaaaaa`, then each 6-letter word contributes $log_2(26) * 6 \approx 28.2$ bits of entropy.
+However, this entropy analysis assumes that a hypothetical hacker knows how the password was generated, which they typically would not. If they don't know this, the password's entropy is effectively higher -- potentially much higher (but not any lower).
