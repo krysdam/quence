@@ -72,7 +72,7 @@ In contrast, Quence passwords are memorable and short, without sacrificing entro
 
 Quence passwords are memorable. Here's a demonstration.
 
-Choose one of the Quence passwords above. Try to memorize it, then open another window and type it in. Repeat until you get it exactly correct. Then try the same thing with the traditional random passwords above. 
+Choose one of the Quence passwords above. Try to memorize it, then look away and try to type or write it. Repeat until you get it exactly correct. Then try the same thing with the traditional random passwords above. 
 
 If you're like me, it takes you half as much time and effort to memorize Quence passwords compared to traditional random-generated passwords. And if I step away for a few minutes and come back, I can recall the Quence password better than the others.
 
