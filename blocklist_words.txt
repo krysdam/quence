@@ -3,6 +3,7 @@
 # So I'm excluding words not pronounced how they are spelled,
 # and "words" that shouldn't be in Google Ngrams to begin with.
 
+# Several common types of words that should be excluded (with examples):
 # Roman numerals: "viii" is pronounced "eight".
 # Abbreviations:  "lbs" is pronounced "pounds".
 # Initialisms:    "dna" is pronounced "dee en ay".
