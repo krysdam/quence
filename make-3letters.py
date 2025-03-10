@@ -15,9 +15,9 @@ def words_from_file(fname:str) -> list:
     return words
 
 # Read in blocklists
-blocklist_words = words_from_file('blocklist_words.txt')
-blocklist_first3 = words_from_file('blocklist_first3.txt')
-blocklist_last3 = words_from_file('blocklist_last3.txt')
+blocklist_words = words_from_file('./blocklists/blocklist_words.txt')
+blocklist_first3 = words_from_file('./blocklists/blocklist_first3.txt')
+blocklist_last3 = words_from_file('./blocklists/blocklist_last3.txt')
 
 
 # Read in 1grams
