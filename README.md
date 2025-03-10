@@ -91,7 +91,7 @@ Admittedly, they are also about twice the length of random-character passwords. 
 
 ### High-entropy
 
-Quence, like all these schemes, is scalable to any given entropy. Each three letters of a Quence password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any desired entropy. For example, you can mak a 100 bit password for a master password on a password manager, and 60 bit passwords for less sensitive accounts.
+Quence, like all these schemes, is scalable to any given entropy. Each three letters of a Quence password (eg: "res", "han", "rat", etc) contributes just over 10 bits. This makes it easy to construct passwords of any desired entropy. For example, you can make a 100 bit password for your master password in a password manager, and 60 bit passwords for less sensitive accounts.
 
 # How it works
 
