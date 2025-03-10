@@ -1,41 +1,9 @@
-# Blocklist for first-3-letter groups.
-# I'm only removing the ones that will never or almost never
-# result in a word/name I could comfortably use.
+# List of forbidden 3-letter groups at the starts of words.
+# These are only the 3-letter groups that always or almost always
+# produce words I wouldn't be comfortable using,
+# which would otherwise appear in the most common 1,296 sequences.
 
-
-##### OFFENSIVE OR DISTRACTING #####
-
-nig
-# A slur, and stays like a slur in most contexts (nigast, nigtal)
-
-# neg (resembles negro) is on the edge,
-# but is mostly from "negative" and "negotiations", and common in "neglect" etc
-# and would typically be pronounced "nehg" and not "neeg"
-# (negast, negtal)
-
-jap
-# A slur in many places, and sounds offensive in most contexts (japast, japtal)
-
-jew
-# Not a slur, but only makes words that sound like mean jokes (jewlia, jewdad)
-
-sex
-# Resulting word always starts with "sex", which is distracting.
-# (sexast, sextal)
-
-ass
-# Same situation.
-# (assast, asstal)
-
-cum
-# Same situation.
-# (cumast, cumtal)
-# Salvageable in some circumstances (cumulo), but not usually.
-
-vag
-# Same situation.
-# (vagast, vagtal)
-# Even more salvageable (vaggar, vaghty), but not often.
+# Content warning: some of these sequences may be/resemble slurs or swears.
 
 
 ##### VERY LIMITED POSSIBLE DISTRIBUTION #####
@@ -64,3 +32,13 @@ vag
 # but they're really not so bad,
 # and judgments of this kind are hard to make in large batches,
 # and can be automated at a later stage (eg: Markov perplexity).
+
+
+##### OFFENSIVE OR DISTRACTING #####
+
+# Slurs,
+# and sequences that otherwise tend to produce offensive-sounding words
+nig jap jew
+
+# Crude language and similar distractions
+sex ass cum vag
