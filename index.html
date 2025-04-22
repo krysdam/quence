@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Password Generator</title>
+    <link rel="icon" type="image/x-icon" href="quince.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Generate a short, memorable, insecure password:</h1>
+    <button id="generate" onclick="setRandomWord()" disabled>Generate</button>
+    <input type="text" id="password" readonly>
+    <button id="copy" onclick="copyToClipboard()" disabled>Copy</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

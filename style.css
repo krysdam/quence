@@ -1,0 +1,37 @@
+h1 {
+    color: purple
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#password {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: monospace;
+    color: purple;
+}
+
+button:disabled {
+    background-color: palegoldenrod;
+    cursor: not-allowed;
+}
+
+button:not(:disabled) {
+    background-color: gold;
+}
+
+button:hover:not(:disabled) {
+    background-color: rgb(211, 158, 25);
+}
