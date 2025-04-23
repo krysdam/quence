@@ -9,10 +9,14 @@
 </head>
 
 <body>
-    <h1>Generate a short, memorable, insecure password:</h1>
-    <button id="generate" onclick="setRandomWord()" disabled>Generate</button>
+    <h1>Generate a short, memorable, secure password:</h1>
+    <button id="generate" onclick="generatePassword()" disabled>
+        Generate
+    </button>
     <input type="text" id="password" readonly>
-    <button id="copy" onclick="copyToClipboard()" disabled>Copy</button>
+    <button id="copy" onclick="copyToClipboard()" disabled>
+        Copy
+    </button>
 
     <script src="script.js"></script>
 </body>

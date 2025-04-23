@@ -35,11 +35,30 @@ function getRandomElement(arr) {
 }
 
 /**
- * Generate a random 6-letter password and put it in the password field.
+ * Generate a random 6-letter word.
  */
-function setRandomWord() {
+function getRandomWord() {
     const word = getRandomElement(first3) + getRandomElement(last3);
-    document.getElementById("password").value = word;
+    return word;
+}
+
+/**
+ * Generate a random password (word-word-word).
+ */
+function getRandomPassword() {
+    const password = getRandomWord()
+        + "-" + getRandomWord()
+        + "-" + getRandomWord();
+    return password;
+}
+
+/**
+ * Generate a random password and display it.
+ */
+function generatePassword() {
+    const password = getRandomPassword();
+    document.getElementById("password").value = password;
+    document.getElementById("copy").innerText = "Copy";
 }
 
 /**
