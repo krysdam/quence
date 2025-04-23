@@ -1,15 +1,24 @@
 h1 {
-    color: purple
+    color: black;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "FreeSans", sans-serif;
+    font-size: 16pt;
     text-align: center;
     padding: 50px;
+    background-color: #e0e0e0;
+}
+
+#generator {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 25px 25px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 16px;
     border: none;
     border-radius: 5px;

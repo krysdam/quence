@@ -9,14 +9,21 @@
 </head>
 
 <body>
-    <h1>Generate a short, memorable, secure password:</h1>
-    <button id="generate" onclick="generatePassword()" disabled>
-        Generate
-    </button>
-    <input type="text" id="password" readonly>
-    <button id="copy" onclick="copyToClipboard()" disabled>
-        Copy
-    </button>
+    <h1>Quence password generator</h1>
+
+    <p>
+        Quence makes short, memorable, high-entropy passwords.
+    </p>
+
+    <div id="generator">
+        <button id="generate" onclick="generatePassword()" disabled>
+            Generate
+        </button>
+        <input type="text" id="password" readonly>
+        <button id="copy" onclick="copyToClipboard()" disabled>
+            Copy
+        </button>
+    </div>
 
     <script src="script.js"></script>
 </body>
