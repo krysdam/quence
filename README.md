@@ -10,7 +10,11 @@ It generates passwords that look like this (entropy shown in parentheses):
 
 # How to use
 
-Quence has two versions: an automatic digital version, and a non-digital version that uses printed paper and dice. The digital version is fast and convenient and has more features, but the paper and dice version doesn't use computer-generated numbers and is therefore easier to confirm as secure.
+Quence has three versions:
+
+1. **(Work in progress) An online version** at [krysdam.github.io/quence](krysdam.github.io/quence/). This is fastest but has the fewest features.
+2. **An automatic digital version**, which you can download above. This is fast and convenient, with the most features.
+3. **A manual version** that uses printed paper and dice. This is slow, but doesn't use computer-generated random numbers and so is easier to comfirm as secure.
 
 ## Digital version
 
